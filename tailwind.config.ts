@@ -57,6 +57,14 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        military: {
+          dark: "hsl(var(--military-dark))",
+          green: "hsl(var(--military-green))",
+          olive: "hsl(var(--military-olive))",
+          tan: "hsl(var(--military-tan))",
+          red: "hsl(var(--military-red))",
+          gray: "hsl(var(--military-gray))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,10 +88,20 @@ export default {
             height: "0",
           },
         },
+        "radar-sweep": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        "pulse-glow": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.5" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "radar-sweep": "radar-sweep 2s linear infinite",
+        "pulse-glow": "pulse-glow 2s ease-in-out infinite",
       },
     },
   },
